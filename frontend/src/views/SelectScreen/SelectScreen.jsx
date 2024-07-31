@@ -9,7 +9,11 @@ const SelectScreen = () => {
     <div css={styles.selectScreenContainer}>
       <SingleSelect title={"PC"} linkTo={"/PC"} imgSrc={avatar} />
       <SingleSelect title={"Pokedex"} linkTo={"/Pokedex"} imgSrc={avatar} />
-      <SingleSelect title={"Profile"} linkTo={"/Profile"} imgSrc={avatar} />
+      <SingleSelect
+        title={"Profile"}
+        linkTo={"/trainer-profile"}
+        imgSrc={avatar}
+      />
       <SingleSelect title={"Trainer Select"} linkTo={"/"} imgSrc={avatar} />
     </div>
   );

@@ -220,3 +220,8 @@ export const textBoxImg = css`
     height: 100%;
   }
 `;
+
+
+export const filterDialogueBox = css`
+  cursor: pointer;
+`;

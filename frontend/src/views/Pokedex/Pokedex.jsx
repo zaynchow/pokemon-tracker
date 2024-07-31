@@ -24,7 +24,7 @@ const Pokedex = () => {
     <div>
       <div css={styles.header}>
         <h1>Pokedex</h1>
-        <Link to={".."}>
+        <Link to={"/trainer"}>
           <img src={closeIcon} alt="close" />
         </Link>
       </div>

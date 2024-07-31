@@ -8,15 +8,25 @@ import pokeBallImg from "../../assets/img/Pokeball_Color.png";
 import ivysaurImg from "../../assets/img/Ivysaur.png";
 import arrowIcon from "../../assets/img/ARROW.png";
 import PCSlotIcon from "../../assets/img/PCSlot.png";
+import { useState } from "react";
+import { PCFilter } from "../PCFilter/PCFilter";
 const PC = () => {
+  const [showFilter, setShowFilter] = useState(false);
+
   return (
     <div>
+      {showFilter && <PCFilter setShowFilter={setShowFilter} />}
       <div css={styles.header}>
-        <Link to={".."}>
+        <Link to={"/trainer"}>
           <img src={closeIcon} alt="close" />
         </Link>
         <h1>PC</h1>
-        <DialogueBox width={"198px"} height={"49px"}>
+        <DialogueBox
+          width={"198px"}
+          height={"49px"}
+          onClick={() => setShowFilter(true)}
+          innerCustomCss={styles.filterDialogueBox}
+        >
           <p>Filter</p>
         </DialogueBox>
       </div>

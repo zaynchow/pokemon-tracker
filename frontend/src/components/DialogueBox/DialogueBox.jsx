@@ -9,9 +9,13 @@ const DialogueBox = ({
   children,
   outerCustomCss,
   innerCustomCss,
+  onClick,
 }) => {
   return (
-    <div css={styles.dialogueBoxContainer(width, height, outerCustomCss)}>
+    <div
+      css={styles.dialogueBoxContainer(width, height, outerCustomCss)}
+      onClick={onClick}
+    >
       <div css={styles.dialogueBoxInnerContainer(innerCustomCss)}>
         {children}
       </div>
